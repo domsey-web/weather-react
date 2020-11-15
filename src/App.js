@@ -1,19 +1,23 @@
 import React from "react";
-import Weather from "./Weather";
+import "./styles.css";
+import "./App.css";
+import SearchForm from "./SearchForm";
+import Forecast from "./Forecast";
+import Footer from "./Footer";
 
-import './App.css';
-
-function App() {
+export default function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <p>
-          Hello World
-        </p>
-        <Weather city="Paris" />
-      </header>
+      <body>
+        <div className="container">
+          <div className="weather-app-wrapper">
+            <SearchForm />
+            <Forecast />
+          </div>
+        </div>
+        <Footer />
+        <script src="src/script.js"></script>
+      </body>
     </div>
   );
 }
-
-export default App;

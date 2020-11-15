@@ -1,0 +1,28 @@
+.form-section {
+  padding-top: 30px;
+}
+
+.form-control {
+  background-color: #fff;
+}
+
+.form-button-row {
+  margin: 0;
+  width: 100%;
+}
+
+.form-control {
+  background-color: #fff;
+}
+
+.fa-search-location {
+  color: #fff;
+  font-size: 20px;
+}
+
+.btn {
+  background-color: #bdc2e8;
+}
+.btn:hover {
+  background-color: #828bd1;
+}

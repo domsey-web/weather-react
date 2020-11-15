@@ -1,0 +1,49 @@
+.header-section {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 26px;
+  padding: 0;
+}
+
+.weather-temperature img {
+  height: 64px;
+  margin-left: -20px;
+  width: 64px;
+}
+
+.temperature {
+  font-size: 42px;
+}
+
+.superscript-conversion {
+  font-size: 13px;
+  top: -21px;
+}
+
+.units .active {
+  color: #fff;
+  cursor: default;
+}
+
+.units .active:hover {
+  text-decoration: none;
+}
+
+.other-weather {
+  font-size: 14px;
+}
+
+ul {
+  margin-bottom: 30px;
+  padding: 0;
+}
+
+li {
+  height: 18px;
+  list-style-type: none;
+  margin-top: 5px;
+  padding: 0px;
+}
+
+li::first-letter {
+  text-transform: capitalize;
+}
