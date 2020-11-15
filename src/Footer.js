@@ -7,7 +7,6 @@ export default function Footer() {
             <p>
                 <a
                     href="https://github.com/domsey-web/my-own-weather-app"
-                    target="_blank"
                 >Open-source code
     </a>
      by Dominique Seyi
