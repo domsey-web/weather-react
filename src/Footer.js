@@ -6,11 +6,14 @@ export default function Footer() {
         <footer>
             <p>
                 <a
-                    href="https://github.com/domsey-web/my-own-weather-app"
+                    href="https://github.com/domsey-web/weather-react"
                 >Open-source code
+    </a> {" "}
+      by <a
+                    href="https://domseyi.com"
+                >Dominique Seyi
     </a>
-     by Dominique Seyi
-  </p>
+            </p>
         </footer>
     )
 }
