@@ -10,7 +10,8 @@ export default function SearchForm() {
                         className="form-control"
                         type="search"
                         placeholder="Search City"
-                        autocomplete="off"
+                        autoComplete="off"
+                        autoFocus="on"
                     />
                 </div>
                 <div className="col-3">
