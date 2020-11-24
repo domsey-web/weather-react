@@ -2,11 +2,11 @@ import React, { useState } from "react";
 import axios from "axios";
 import "./Forecast.css";
 
-export default function Forecast() {
-    const [ready, setReady] = useState(false);
-    const [weatherData, setWeatherData] = useState({});
+export default function Forecast(props) {
+    const [weatherData, setWeatherData] = useState({ ready: false });
     function handleResponse(response) {
         setWeatherData({
+            ready: true,
             temperature: response.data.main.temp,
             humidity: response.data.main.humidity,
             date: "Monday, 06:04",
@@ -17,10 +17,9 @@ export default function Forecast() {
         })
 
 
-        setReady(true);
     }
 
-    if (ready) {
+    if (weatherData.ready) {
         return (
             <div className="row">
                 <div className="col-12">
@@ -79,8 +78,7 @@ export default function Forecast() {
 
         const apiKey = "d2b4efd6e0f5423f450f89aaf0181665";
         const units = "metric"
-        let city = "New York";
-        let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=${units}&appid=${apiKey}`;
+        let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${props.defaultCity}&units=${units}&appid=${apiKey}`;
         axios.get(apiUrl).then(handleResponse)
 
         return "Loading...";

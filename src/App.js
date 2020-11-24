@@ -12,7 +12,7 @@ export default function App() {
         <div className="container">
           <div className="weather-app-wrapper">
             <SearchForm />
-            <Forecast />
+            <Forecast defaultCity="London" />
           </div>
         </div>
         <Footer />
