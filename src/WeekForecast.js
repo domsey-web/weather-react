@@ -19,22 +19,22 @@ export default function WeekForecast(props) {
         return (
             <div className="WeatherForecast">
                 <div className="row week-forecast">
-                    <div class Name="col2">
+                    <div className="col2">
                         <WeatherForecastPreview data={forecast.list[0]} />
                     </div>
-                    <div class Name="col2">
+                    <div className="col2">
                         <WeatherForecastPreview data={forecast.list[1]} />
                     </div>
-                    <div class Name="col2">
+                    <div className="col2">
                         <WeatherForecastPreview data={forecast.list[2]} />
                     </div>
-                    <div class Name="col2">
+                    <div className="col2">
                         <WeatherForecastPreview data={forecast.list[3]} />
                     </div>
-                    <div class Name="col2">
+                    <div className="col2">
                         <WeatherForecastPreview data={forecast.list[4]} />
                     </div>
-                    <div class Name="col2">
+                    <div className="col2">
                         <WeatherForecastPreview data={forecast.list[5]} />
                     </div>
 

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import ForecastInfo from "./ForecastInfo"
 import WeekForecast from "./WeekForecast";
+import BackgroundImage from "./BackgroundImage";
 import axios from "axios";
 import "./Forecast.css";
 import "./SearchForm.css";
@@ -65,9 +66,16 @@ export default function Forecast(props) {
                         </div>
                     </div>
                 </form>
-                <ForecastInfo data={weatherData} />
-                <WeekForecast city={weatherData.city} />
-
+                <div className="row">
+                    <div className="col-12">
+                        <BackgroundImage data={weatherData} />
+                        <div className="card-img-overlay">
+                            <div className="card-body"></div>
+                            <ForecastInfo data={weatherData} />
+                            <WeekForecast city={weatherData.city} />
+                        </div>
+                    </div>
+                </div>
 
 
             </div>

@@ -14,7 +14,9 @@
 display: block;
 margin: 5px 0 5px 2px;
 width: 35px;
+color: black;
 }
 
-
-
+.WeatherInfo {
+    margin: 0 10px 0 10px;
+}
