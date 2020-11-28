@@ -43,11 +43,6 @@ export default function ForecastInfo(props) {
                                     </li>
                                 </ul>
                             </div>
-                            <div className="row week-forecast">
-                                <div className="col2">
-                                    <div className="row"></div>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
