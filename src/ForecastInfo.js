@@ -4,10 +4,8 @@ import WeatherIcon from "./WeatherIcon";
 import WeatherTemperature from "./WeatherTemperature";
 
 export default function ForecastInfo(props) {
-
     return (
         <div className="WeatherInfo">
-
             <h1 className="header-section">
                 <span>{props.data.city}</span>
             </h1>
@@ -19,23 +17,21 @@ export default function ForecastInfo(props) {
             </ul>
             <div className="clearfix weather-temperature">
                 <div className="float-left">
-                    <WeatherIcon code={props.data.icon} />
+                    <WeatherIcon color="white" code={props.data.icon} />
                 </div>
 
                 <WeatherTemperature celsius={props.data.temperature} />
-
             </div>
             <div className="extra-weather">
                 <ul className="other-weather">
                     <li>
                         Humidity: <span>{props.data.humidity}</span>%
-                                    </li>
+          </li>
                     <li>
                         Wind: <span>{Math.round(props.data.wind)}</span> km/h
-                                    </li>
+          </li>
                 </ul>
             </div>
         </div>
-
     );
 }
