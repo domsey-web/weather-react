@@ -14,7 +14,6 @@ export default function App() {
           </div>
         </div>
         <Footer />
-        <script src="src/script.js"></script>
       </body>
     </div>
   );
